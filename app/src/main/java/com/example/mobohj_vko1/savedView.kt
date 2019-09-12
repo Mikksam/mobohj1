@@ -50,7 +50,7 @@ class SavedView : AppCompatActivity() {
             }
 
             builder.setNegativeButton("NO"){dialog, which ->
-
+                //pitäisikö olla jotain extratoimintoa mahd jos haluaisi kehittää..
             }
 
             val dialog: AlertDialog = builder.create()
