@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light">
+
+        <View
+            android:id="@+id/fakeView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5in"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/fakeView1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5in"
+            android:layout_alignBottom="@+id/fakeView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/holo_red_dark" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_weight=".5"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light">
+
+        <View android:id="@+id/fakeView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignRight="@id/fakeView2"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:text="Hide picture" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@id/fakeView2"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:text="Show Picture" />
+    </RelativeLayout>
+
+
+</LinearLayout>
