@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_remove.setOnClickListener {
-
+                //fix remove!!!!
             //times.remove(toRemove)
             recyclerView.adapter = MainAdapter(times)
         }
