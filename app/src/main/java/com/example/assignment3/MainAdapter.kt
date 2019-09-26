@@ -25,6 +25,7 @@ class MainAdapter(arrayTime: ArrayList<String>) : RecyclerView.Adapter<CustomVie
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         val timeNow = timeArray.get(position)
         holder.view.timeView.text = timeNow
+
     }
 }
 

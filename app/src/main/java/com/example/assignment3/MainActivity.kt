@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.RequiresApi
+import androidx.core.view.get
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.time_row.*
 import java.time.LocalDateTime
@@ -22,15 +24,17 @@ class MainActivity : AppCompatActivity() {
         //recyclerView.adapter = MainAdapter()
 
         button_add.setOnClickListener {
-
+            //Add to list
             times.add(LocalDateTime.now().toString())
 
             recyclerView.adapter = MainAdapter(times)
         }
 
         button_remove.setOnClickListener {
-                //fix remove!!!!
-            //times.remove(toRemove)
+            //Remove from list
+            //Need to get position in the list...
+            //Osoittautui tähän hätään liian hankalaksi toteuttaa tällä menetelmällä käyttämällä listaa
+            //Listener tarvitsisi todennäköisesti sijoittaa Adapteriin, jotta saa positionin
             recyclerView.adapter = MainAdapter(times)
         }
     }
