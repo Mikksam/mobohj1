@@ -25,5 +25,6 @@ class SplashActivity : AppCompatActivity() {
         }
         background.start()
 
+        
     }
 }
